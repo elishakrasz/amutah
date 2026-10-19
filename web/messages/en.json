@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "Aid for people in need",
+    "description": "Aid case management system"
+  },
+  "home": {
+    "heading": "Aid for people in need",
+    "intro": "The amuta gives small grants for rent, car repairs, childcare, baby supplies and small medical costs.",
+    "apply": "Apply",
+    "refer": "Professional referral",
+    "status": "My application status",
+    "comingSoon": "Coming soon"
+  },
+  "staff": {
+    "loginHeading": "Staff sign-in (demo)",
+    "demoWarning": "Demo environment only. Synthetic data. Never enter real applicant information.",
+    "pickUser": "User",
+    "pickRole": "Role",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "loading": "Loading…",
+    "loadError": "Cannot reach the server. Is the API running?",
+    "loginError": "Sign-in failed",
+    "signedInAs": "Signed in as {name} ({role})",
+    "notSignedIn": "Not signed in",
+    "goToLogin": "Go to sign-in"
+  },
+  "roles": {
+    "applicant": "Applicant",
+    "referrer": "Referrer",
+    "coordinator": "Coordinator",
+    "committee_member": "Committee member",
+    "committee_chair": "Committee chair",
+    "treasurer": "Treasurer",
+    "board_member": "Board member",
+    "auditor": "Auditor",
+    "admin": "Admin"
+  }
+}

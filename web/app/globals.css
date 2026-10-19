@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Use logical utilities (ms-*, me-*, ps-*, pe-*, start-*, end-*, text-start)
+   so layouts flip correctly between RTL and LTR. */
+
+@theme {
+  --font-sans: var(--font-heebo), system-ui, sans-serif;
+  --color-brand: #1f5f8b;
+  --color-brand-ink: #ffffff;
+  --color-surface: #ffffff;
+  --color-ink: #1b1f24;
+  --color-muted: #59636e;
+  --color-line: #d0d7de;
+  --color-warn-bg: #fff4ce;
+  --color-warn-ink: #5c4400;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 2px;
+}

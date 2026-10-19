@@ -1,0 +1,93 @@
+"""Import every model so Base.metadata is complete for Alembic and tests."""
+
+from app.models.base import Base, append_only_tables
+from app.models.cases import (
+    AidCase,
+    CaseSequence,
+    CaseTransition,
+    ChairApproval,
+    Document,
+    EligibilityCheck,
+    FollowUp,
+    Holiday,
+    TierAssignment,
+    Verification,
+)
+from app.models.committee import Appeal, AppealDecision, Decision, DecisionApprover, Recusal, Score
+from app.models.intake import IncomeWorksheet, IntakeCall, Lead, RightsCheck, RightsCheckItem
+from app.models.panels import (
+    AlternateAssignment,
+    AmountAmendment,
+    CommitteeAlternate,
+    DecisionProposal,
+    DecisionVote,
+    Ratification,
+    SlaEventRow,
+)
+from app.models.payments import (
+    Allocation,
+    Payment,
+    PaymentBatch,
+    PaymentBatchExecution,
+    PaymentEvent,
+    VoucherStock,
+)
+from app.models.people import Applicant, Household, Insider, Referrer, StaffUser
+from app.models.system import (
+    AuditEvent,
+    ConfigVersion,
+    IdempotencyRecord,
+    OrgDocument,
+    OtpChallenge,
+    PublicStatsPublication,
+)
+
+__all__ = [
+    "Ratification",
+    "AlternateAssignment",
+    "AmountAmendment",
+    "CommitteeAlternate",
+    "DecisionProposal",
+    "DecisionVote",
+    "SlaEventRow",
+    "Allocation",
+    "VoucherStock",
+    "IncomeWorksheet",
+    "IntakeCall",
+    "Lead",
+    "RightsCheck",
+    "RightsCheckItem",
+    "OrgDocument",
+    "PublicStatsPublication",
+    "AidCase",
+    "Appeal",
+    "AppealDecision",
+    "Applicant",
+    "AuditEvent",
+    "Base",
+    "CaseSequence",
+    "CaseTransition",
+    "ChairApproval",
+    "ConfigVersion",
+    "Decision",
+    "DecisionApprover",
+    "Document",
+    "EligibilityCheck",
+    "FollowUp",
+    "Holiday",
+    "Household",
+    "IdempotencyRecord",
+    "Insider",
+    "OtpChallenge",
+    "Payment",
+    "PaymentBatch",
+    "PaymentBatchExecution",
+    "PaymentEvent",
+    "Recusal",
+    "Referrer",
+    "Score",
+    "StaffUser",
+    "TierAssignment",
+    "Verification",
+    "append_only_tables",
+]
